@@ -50,3 +50,4 @@ Development method:
 * Scott is currently the scrum master, but there are other members on the team who have interest in getting experience in this role, so we may rotate that position throughout the project to give others the opportunity to experience it as well as add their own ideas into how the scrum master role is implemented.	 
 
 Project Tracking Software Link: 
+https://trello.com/invite/b/67aa8dacedd351d2afd0c7ff/ATTI8e3263db6394dee75751de9975d9807881DF3439/team-3-ctrl-alt-elite
