@@ -30,22 +30,19 @@ Risks to project completion, possibly including:
 * In terms of risks with the version control system Git, we may run into issues involving branches, committing, and merging.  
 
 Mitigation Strategy for Above Risks:
-Team Members Lack of Proficiency with Technologies 
-* Allocate time for tutorials and documentation reviews. 
-* Any team member with experience of an otherwise new technology should be accessible for questions from other team members. 
-
-Team Members’ Availability for Weekly Meetings 
-* Determine a weekly recurring time that works for most members and adjust the time if needed. 
-* If a team member cannot make a meeting, tools such as Trello and Outlook can be used record project status. 
-
-Time Management 
-* Breaking down tasks into manageable user stories, taking into account all team members’ schedules. 
-* Frequent communication allows for development blocks to be handled efficiently. 
-* Establish clearly defined deliverables prevents scope creep. 
-
-Version Control
-* Maintain a main branch via Git and work on specific features in dedicated branches. 
-* Another team member should review a developer’s changes before any branch is merged with the main branch. 
+* Team Members Lack of Proficiency with Technologies 
+    * Allocate time for tutorials and documentation reviews. 
+    * Any team member with experience of an otherwise new technology should be accessible for questions from other team members.
+* Team Members’ Availability for Weekly Meetings 
+    * Determine a weekly recurring time that works for most members and adjust the time if needed. 
+    * If a team member cannot make a meeting, tools such as Trello and Outlook can be used record project status. 
+* Time Management 
+    * Breaking down tasks into manageable user stories, taking into account all team members’ schedules. 
+    * Frequent communication allows for development blocks to be handled efficiently. 
+    * Establish clearly defined deliverables prevents scope creep. 
+* Version Control
+    * Maintain a main branch via Git and work on specific features in dedicated branches. 
+    * Another team member should review a developer’s changes before any branch is merged with the main branch. 
 
 Development method: 
 * We will use scrum for our development method. We will break the work for building our project into story cards and organize those cards to be completed in 1-week sprints. We will have a standup at the beginning of each sprint to monitor our progress and make sure not blocked. We will also hold retrospective meetings to make sure our team members are happy and productive by discussing what is going well, what isn’t going well, and what needs to be changed.
