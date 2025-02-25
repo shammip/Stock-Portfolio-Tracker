@@ -22,7 +22,8 @@
 
 <strong>This sprint's focus is:</strong>
 
-* Adding to the homepage we set up, customizing our Github rules to enforce our code review policy
+* Adding to the homepage we set up
+* Customizing our Github rules to enforce our code review policy
 * Designing the Login page
 * Designing and Creating data tables in the database
 
@@ -39,4 +40,4 @@
 
 * Get a webpage started in Github
 * Design the first page (homepage)
-* Research the resources we will need: a database and a data source:
+* Research the resources we will need: a database and a data source for stock info
