@@ -1,6 +1,6 @@
 # Weekly Status
 
- ## Week 3 2/24 - 3/02 Status <span style="color: green">On Track</span>
+ ## Week 3,&nbsp; 2/24 - 3/02 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="1512" alt="Screenshot 2025-02-24 at 8 40 16 PM" src="https://github.com/user-attachments/assets/b87a9176-0988-4c6d-820a-77f4e72a45b2" />
 &nbsp;
@@ -11,7 +11,11 @@
 * Adding and removing a stock from the homepage
 * Figuring out the authenticaiton for logging in and out of the site
 
-## Week 2 2/17 - 2/23 Status: <span style="color: green">On Track</span>
+&nbsp;
+
+---
+
+## Week 2,&nbsp; 2/17 - 2/23 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="1512" alt="Screenshot 2025-02-18 at 10 00 18 PM" src="https://github.com/user-attachments/assets/9cdc732b-a227-400a-96d9-ca819c731134" />
 &nbsp;
@@ -22,8 +26,11 @@
 * Designing the Login page
 * Designing and Creating data tables in the database
 
+&nbsp;
 
-## Week 1 2/10 - 2/16 Status: <span style="color: green">On Track</span>
+---
+
+## Week 1,&nbsp; 2/10 - 2/16 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="1148" alt="Screenshot 2025-02-12 at 10 56 12 PM" src="https://github.com/user-attachments/assets/fd5622ad-5ef3-468d-bfff-dadd859cf199" />
 &nbsp;
