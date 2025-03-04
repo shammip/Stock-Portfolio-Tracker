@@ -18,12 +18,12 @@
 
 ### #3. Account Settings
 
-* Page Title: 
+* Page Title: Account Settings
 * Page Description (include a mockup or hand drawn image of the page): 
-* Parameters needed for the page: 
-* Data needed to render the page: 
-* Link destinations for the page: 
-* List of tests for verifying the rendering of the page: 
+* Parameters needed for the page: name, username, email_id, password
+* Data needed to render the page: name, username, email_id, password
+* Link destinations for the page: clicking 'Stock Portfolio Tracker' leads to Homepage, clicking 'Logout' or 'Delete Account' leads to Login page
+* List of tests for verifying the rendering of the page: correctly display all user information, logging out or deleting account leads to being redirected to the Login page, clicking 'Stock Portfolio Tracker' leads to Homepage and able to update username, email id and password
 
 ### #4. Documentation 
 
