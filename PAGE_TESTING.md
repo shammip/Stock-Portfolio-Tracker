@@ -1,4 +1,4 @@
-### #1. Homepage
+### #1. Homepage (Brendan)
 
 * Page Title: 
 * Page Description (include a mockup or hand drawn image of the page): 
@@ -7,7 +7,7 @@
 * Link destinations for the page: 
 * List of tests for verifying the rendering of the page: 
 
-### #2. Login 
+### #2. Login (Brendan)
 
 * Page Title: 
 * Page Description (include a mockup or hand drawn image of the page): 
@@ -25,7 +25,7 @@
 * Link destinations for the page: clicking 'Stock Portfolio Tracker' leads to Homepage, clicking 'Logout' or 'Delete Account' leads to Login page
 * List of tests for verifying the rendering of the page: correctly display all user information, logging out or deleting account leads to being redirected to the Login page, clicking 'Stock Portfolio Tracker' leads to Homepage and able to update username, email id and password
 
-### #4. Documentation 
+### #4. Documentation (Brendan)
 
 * Page Title: 
 * Page Description (include a mockup or hand drawn image of the page): 
