@@ -34,7 +34,7 @@
 * Link destinations for the page: 
 * List of tests for verifying the rendering of the page: 
 
-### #5. Stock News
+### #5. Stock Articles
 
 * Page Title: Stock Articles
 * Page Description (include a mockup or hand drawn image of the page): This page displays recent news articles and SEC filings related to a specific stock.
