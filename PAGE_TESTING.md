@@ -1,20 +1,20 @@
 ### #1. Homepage (Brendan)
 
-* Page Title: 
-* Page Description (include a mockup or hand drawn image of the page): 
-* Parameters needed for the page: 
-* Data needed to render the page: 
-* Link destinations for the page: 
-* List of tests for verifying the rendering of the page: 
+* Page Title: Homepage
+* Page Description (include a mockup or hand drawn image of the page): includes the main functionality of the application, allowing users to search for stock information, add that ticker/stock to their watchlist, and remove items from their watchlist.
+* Parameters needed for the page: username, ticker symbol entry
+* Data needed to render the page: username, ticker symbol entry
+* Link destinations for the page: login (navigates to login page), add to watchlist (appends ticker symbol to user watchlist), watchlist window (users can click ticker symbol to view stock info in main section)
+* List of tests for verifying the rendering of the page: confirm watchlist is loaded properly based on user login, confirm add to watchlist button appends the ticker symbol to the users watchlist, confirm the add to watchlist button changes to remove from watchlist when a ticket symbol is in the users stock list, confirm a valid ticket symbol renders the stock info page properly, confirm an invalid ticker symbol returns an error to the user, confirm validity of response data
 
 ### #2. Login (Brendan)
 
-* Page Title: 
-* Page Description (include a mockup or hand drawn image of the page): 
-* Parameters needed for the page: 
-* Data needed to render the page: 
-* Link destinations for the page: 
-* List of tests for verifying the rendering of the page: 
+* Page Title: Login
+* Page Description (include a mockup or hand drawn image of the page): This page allows users to enter their username and password to login to view their Account Settings and Homepage. It includes two entry forms for users to type their username and password, and a button to login. When the login button is clicked, the username and password are checked against the users table to confirm they are both valid. If they match the username and password stored in the database, the user is admitted. If they do not match, but the username exists, users will be returned to try their password again. If the username does not exist, the user is given the option to create a new account, which appends the username to the table.
+* Parameters needed for the page: username, password
+* Data needed to render the page: no external data needed to render
+* Link destinations for the page: Homepage
+* List of tests for verifying the rendering of the page: test to verify that user inputs are sanitized properly, test to validate incorrect password is denied entry, test to confirm that valid password is granted entry, test to confirm that new accounts are created properly
 
 ### #3. Account Settings
 
@@ -27,12 +27,12 @@
 
 ### #4. Documentation (Brendan)
 
-* Page Title: 
-* Page Description (include a mockup or hand drawn image of the page): 
-* Parameters needed for the page: 
-* Data needed to render the page: 
-* Link destinations for the page: 
-* List of tests for verifying the rendering of the page: 
+* Page Title: Documentation
+* Page Description (include a mockup or hand drawn image of the page): This page contains documentation details on the external data sources referenced. 
+* Parameters needed for the page: this page contains static text fields only
+* Data needed to render the page: this page contains status text fields only
+* Link destinations for the page: yFinance Python module documentation page, SEC EDGAR documentation page
+* List of tests for verifying the rendering of the page: confirm text renders properly and content length is correct, confirm clicking links opens content page in new tab and go to the correct destination
 
 ### #5. Stock Articles
 
