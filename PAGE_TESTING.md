@@ -28,7 +28,7 @@
 ### #4. Documentation (Brendan)
 
 * Page Title: Documentation
-* Page Description (include a mockup or hand drawn image of the page): This page contains documentation details on the external data sources referenced. 
+* Page Description (include a mockup or hand drawn image of the page): This page contains documentation details on the external data sources referenced. ![Documentation Design](images/documentation_design.jpg)
 * Parameters needed for the page: this page contains static text fields only
 * Data needed to render the page: this page contains status text fields only
 * Link destinations for the page: yFinance Python module documentation page, SEC EDGAR documentation page
