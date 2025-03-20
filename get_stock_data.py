@@ -3,6 +3,7 @@ from edgar import Company, set_identity, get_filings
 import numpy as np
 import re
 
+
 # will be used to retrieve more details for when the user clicks on a stock or searches for a stock
 def get_stock_details(ticker):
     stock_data = {}
@@ -58,8 +59,9 @@ def get_watchlist_data(tickers):
 def get_stock_news(ticker):
     stock = yf.Ticker(ticker)
     news = stock.news
+    df = pd.Dataframe(news)
 
-    return news[:10] # get only 10
+    return df.head(10) # get only 10
 
 # use edgartools to extract SEC filing documents
 def get_stock_filings(userEmail, ticker):
@@ -68,7 +70,7 @@ def get_stock_filings(userEmail, ticker):
     filings = ticker_symbol.get_filings()
     df = filings.to_pandas()
     
-    return df.head(10)
+    return df.head(10) # get only 10
     
     
 # main function used for testing get_watchlist_data() and get_stock_details()
@@ -82,7 +84,7 @@ def main():
         ticker = input().strip().upper()
         stock_data = get_stock_details(ticker)
         stock_news = get_stock_news(ticker)
-        stock_filings = get_stock_filings('jgiannoni1@gmail.com', ticker)
+        stock_filings = get_stock_filings('PUT YOUR EMAIL HERE FOR THE TIME BEING', ticker)
         print(stock_data, stock_news, stock_filings)
     
     else:
