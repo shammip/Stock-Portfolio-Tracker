@@ -1,5 +1,5 @@
 import yfinance as yf
-from edgar import Company, set_identity, get_filings
+from edgar import Company, set_identity, get_filings # "pip install edgartools"
 import pandas as pd
 import numpy as np
 import re
