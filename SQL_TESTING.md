@@ -23,7 +23,7 @@ ___
 >> * **Post-Conditions:** This does not alter the database in any way.
 >
 > **Access Method:** _"Login"_ function<br>
-> **Description:** This method queries the _user_information_ table using text from the _username_ and _password_ fields of the homepage.<br>
+> **Description:** This method queries the _user_information_ table using text from the _username_ and _password_ fields of the login page.<br>
 > **Access Page:** Login page<br>
 > **Parameters:** _username_ &nbsp;&nbsp; : &nbsp;&nbsp; text datatype<br>
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _password_ &nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; text datatype<br>
@@ -40,25 +40,12 @@ ___
 >>    2. Open console log via F12.
 >>    3. Type in a valid _username_ and _password_ into the text boxes.
 >>    4. Click the _"Login"_ button.
->> * **Expected Result:** The browser should be redirected to the user's homepage with the submitted _username_ visible on the homepage.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The message "Login successful" should be printed to the console.
->> * **Actual Result:**
->> * **Status:**
+>> * **Expected Result:** The browser should be redirected to the user's homepage with the submitted _username_ visible on the login page.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The message "Login successful" should be printed to the console.
+>> * **Actual Result:** The test successfully produces the expected results. When valid username and password are provided and compared against the records in _user_information_, the user will be advanced to their homepage.
+>> * **Status:** Unit testing passing, integration testing in progress
 >> * **Post-Conditions:** If the user has successfully logged in, they should now be able to access their homepage.  With their _username_ verified to exist within the _user_information_ table, they should now be able to add stocks to and remove stocks from their watchlist.<br>
 >
->> **UseCase Name:** Attempt login with **valid** _username_ but **invalid** _password_.
->> * **Description:** Confirm valid _username_ but invalid _password_ results in empty return value from _user_information_ table via the login function.
->> * **Pre-Conditions:** The _user_information_ table does contain a row with the applicable _username_, however the subsequent _password_ does not match the given password for that _username_.
->> * **Test Steps:**
->>    1. Access the login page.
->>    2. Open console log via F12.
->>    3. Type in a valid _username_ and invalid _password_ into the text boxes.
->>    4. Click the _"Login"_ button.
->> * **Expected Result:** The browser should return to the login page with the submitted _username_ text still filled but the _password_ field empty.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The message "Invalid password" should be printed to the console.
->> * **Actual Result:**
->> * **Status:**
->> * **Post-Conditions:** When the login method rejects the invalid _password_, the browser should return to the login page with the _username_ text field still filled but the _password_ text field empty.<br>
->
->> **UseCase Name:** Attempt login with **invalid** _username_ and _password_.
+>> **UseCase Name:** Attempt login with **invalid** _username_ or _password_.
 >> * **Description:** Confirm invalid _username_ and _password_ results in empty return value from _user_information_ table via the login function.
 >> * **Pre-Conditions:** The _user_information_ table does not contain a row with the applicable _username_ and _password_.
 >> * **Test Steps:**
@@ -67,8 +54,8 @@ ___
 >>    3. Type in a invalid _username_ and _password_ into the text boxes.
 >>    4. Click the _"Login"_ button.
 >> * **Expected Result:** The browser should be return to the login page with empty _username_ and _password_ fields.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The message "Invalid username and/or password" should be printed to the console.
->> * **Actual Result:**
->> * **Status:**
+>> * **Actual Result:** The test successfully produces the expected result. When incorrect username OR password are provided, the user is returned to the login page and asked to login again.
+>> * **Status:** Test passing. 
 >> * **Post-Conditions:** When the login method rejects the invalid _username_ and _password_, the browser should return to the login page with empty _username_ and _password_ text fields.
 ___
 > #### **Table Name:** stock
