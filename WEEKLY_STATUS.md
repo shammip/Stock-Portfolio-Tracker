@@ -3,6 +3,7 @@
  ## Week 4,&nbsp; 3/31 - 4/06 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="1047" alt="Screenshot 2025-04-01 at 7 15 42 PM" src="https://github.com/user-attachments/assets/183d1873-644c-4f54-82c2-7c85cc61d23c" />
+&nbsp;
 
 <strong>This sprint's focused is:</strong>
 
@@ -27,6 +28,7 @@
  ## Week 4,&nbsp; 3/17 - 3/23 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="700" alt="Screenshot 2025-03-17 at 7 39 35 PM" src="https://github.com/user-attachments/assets/af7bf0d0-afc6-49d2-a920-5b21896b148a" />
+&nbsp;
 
 <strong>This sprint's focused is:</strong>
 
@@ -43,6 +45,7 @@
  ## Week 4,&nbsp; 3/10 - 3/16 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="757" alt="Screenshot 2025-03-10 at 11 32 56 PM" src="https://github.com/user-attachments/assets/35e258cc-5b63-4601-bebf-a72a45fc21a2" />
+&nbsp;
 
 <strong>This sprint's focused is:</strong>
 
