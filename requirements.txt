@@ -1,4 +1,4 @@
 Flask
 Gunicorn
 yfinance
-python-edgar
+edgartools
