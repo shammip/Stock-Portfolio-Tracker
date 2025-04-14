@@ -1,8 +1,11 @@
 /* CSS rules for whole site */
 
+html {
+    font-family: 'Times New Roman', sans-serif; /* font format */
+}
+
 h1 {
     margin-top: 20px; /* padding */
-    font-family: 'Times New Roman', sans-serif;  /* font format */
     font-size: 50px;  /* font size */
     color: #003366; /* color */
     text-align: center;
