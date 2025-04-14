@@ -44,6 +44,7 @@ input {
     text-align: top; /* text top alignment */
     justify-content: left; /* text left justified */
     padding: 8px; /* add padding around text */
+    flex-direction: column;
 }
 
 /* Watchlist Format */
@@ -66,4 +67,26 @@ input {
     bottom: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+/* News Article */
+.news_article {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#companyTicker, #companyName {
+    margin: 0;
+    padding: 0;
+}
+
+#companyTicker {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+#companyName {
+    text-align: left;
 }
