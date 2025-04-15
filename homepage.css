@@ -10,27 +10,6 @@ body {
     padding: 0;  /* proper alignment */
 }
 
-/* Login/Logout Button */
-.login_button, .logout_button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-}
-        
-/* Search Bar Format */
-input {
-    width: 770px; /* width of search bar */
-    height: 40px; /* height of search bar */
-    background-color: lightgray; /* background color */
-    border: 2px solid black; /* border format */
-    border-radius: 8px; /* rounded border */
-    font-size: 20px; /* text size */
-    font-style: italic; /* italicize text */
-    text-align: center; /* center text */
-    padding: 8px; /* add padding around text */
-}
-
 /* Stock Format */
 .rectangle.large {
     position: relative; 
@@ -61,12 +40,26 @@ input {
     padding: 8px; /* add padding around text */
 }
 
-/* Remove Button */
-.remove_button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+/* Search Bar Format */
+input {
+    width: 740px; /* width of search bar */
+    height: 40px; /* height of search bar */
+    background-color: lightgray; /* background color */
+    border: 2px solid black; /* border format */
+    border-radius: 8px; /* rounded border */
+    font-size: 20px; /* text size */
+    font-style: italic; /* italicize text */
+    text-align: center; /* center text */
+    padding: 8px; /* add padding around text */
+}
+
+/* Search Button */
+.search_button {
     cursor: pointer;
+    background-color: #0077cc;
+    border: 2px solid #0077cc;
+    border-radius: 30px;
+    color: white;
 }
 
 /* News Article */
@@ -75,6 +68,22 @@ input {
     bottom: 10px;
     left: 10px;
     cursor: pointer;
+    background-color: #0077cc;
+    border: 2px solid #0077cc;
+    border-radius: 30px;
+    color: white;
+}
+
+/* Remove Button */
+.remove_button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #0077cc;
+    border: 2px solid #0077cc;
+    border-radius: 30px;
+    color: white;
 }
 
 #companyTicker, #companyName {
