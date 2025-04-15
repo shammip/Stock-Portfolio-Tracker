@@ -22,14 +22,10 @@
         <a href="documentation.html">Documentation</a>
     </div>
     
-    <!-- Login/Logout Buttons -->
-    <!-- <button class="login_button">Login</button> -->
-    <!-- <button class="logout_button" style="display: none;">Logout</button> -->
-    
     <!-- Search Bar -->
     <form>
         <input type="text" placeholder="ticker">
-        <button type="submit">Search</button>
+        <button type="submit" class="search_button">Search</button>
     </form>
 
     <!-- Container for Rectangles -->
@@ -44,9 +40,8 @@
         <div id="stockDisplay" class="rectangle large">
             <h1 id="companyTicker">GME</h1>
             <h2 id="companyName">Gamestop Corp.</h2>
-            <form><button type="submit" class="news_article">News Article</button></form>
+            <form action="news.html"><button type="submit" class="news_article">News Article</button></form>
             <form><button type="submit" class="remove_button">Remove from Watchlist</button></form>
-            <!-- <form><button type="submit">remove from watchlist</button></form> -->
         </div>
         
         <!-- Display Watchlist -->
