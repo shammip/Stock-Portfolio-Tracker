@@ -11,7 +11,25 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin-top: 20px; /* padding */
+    font-size: 30px;  /* font size */
+    color: black; /* color */
+    text-align: center;
+}
+
+p {
+    color: black; /* color */
+    text-align: center;
+}
+
+ul {
+    color: black; /* color */
+    text-align: center;
+}
+
 .subheadings {
+    text-align: center;
     margin: 0 0 20px 0; /* padding */
     font-size: 22px; /* font size */
     font-weight: 300; /* bold */
