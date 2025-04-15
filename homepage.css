@@ -75,7 +75,19 @@ input {
 }
 
 /* Remove Button */
-.remove_button {
+.removeButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #0077cc;
+    border: 2px solid #0077cc;
+    border-radius: 30px;
+    color: white;
+}
+
+/* Add Button */
+.addButton {
     position: absolute;
     bottom: 10px;
     right: 10px;
