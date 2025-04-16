@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!-- Page Name -->
+    <title>Login</title>
+    <link href="static/css/global.css" type="text/css" rel="stylesheet"/>
+    <link href="static/css/loginpage.css" type="text/css" rel="stylesheet"/>
+</head>
+    
+<body>  
+    
+    <!-- Page Title -->
+    <h1>Stock Portfolio Tracker</h1>
+    
+    <!-- Subheadings with Navigation Links -->
+    <div class="subheadings">
+        <a href="{{ url_for('homepage') }}">Home</a> |
+        <!-- <a href="loginpage.html">Login</a> | -->
+        <a href="{{ url_for('login') }}" class="active">Login</a> |
+        <a href="{{ url_for('settings') }}">Account Settings</a> |
+        <a href="{{ url_for('documentation') }}">Documentation</a>
+    </div>
+
+    <!-- Container for Rectangles -->
+    <div class="rectangle-container">
+        <!-- Display Login Inputs -->
+        <div class="rectangle large">
+            <form>
+                <!-- Username & Password Inputs -->
+                <input type="text" placeholder="Username">
+                <br><br>
+                <input type="text" placeholder="Password">
+                <br><br>
+                <!-- Login Button -->
+                <button class="login_button">Login</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+        
+</html>

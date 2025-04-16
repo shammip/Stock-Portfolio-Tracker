@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!-- Page Name -->
+    <title>Stock Portfolio Tracker</title>
+    <link href="static/css/global.css" type="text/css" rel="stylesheet"/>
+    <link href="static/css/homepage.css" type="text/css" rel="stylesheet"/>
+</head>
+    
+<body>  
+    
+    <!-- Page Title -->
+    <h1>Stock Portfolio Tracker</h1>
+    
+    <!-- Subheadings with Navigation Links -->
+    <div class="subheadings">
+        <a href="{{ url_for('homepage') }}" class="active">Home</a> |
+        <!-- <a href="loginpage.html">Login</a> | -->
+        <a href="{{ url_for('login') }}">Login</a> |
+        <a href="{{ url_for('settings') }}">Account Settings</a> |
+        <a href="{{ url_for('documentation') }}">Documentation</a>
+    </div>
+    
+    <!-- Search Bar -->
+    <form>
+        <input id="searchText" type="text" placeholder="ticker">
+        <button id="searchButton" type="submit" class="search_button">Search</button>
+    </form>
+
+    <!-- Container for Rectangles -->
+    <div class="rectangle-container">
+            
+        <!-- Display User Bar -->
+        <div>
+            <div id="username">hi_roller_31</div>
+        </div>
+            
+        <!-- Display Stock -->
+        <div id="stockDisplay" class="rectangle large">
+            <h1 id="companyTicker"></h1>
+            <h2 id="companyName"></h2>
+            <div id="stockData"></div>
+            <form action="news.html"><button type="submit" class="news_article">News Article</button></form>
+        </div>
+        
+        <!-- Display Watchlist -->
+        <div id="watchlist" class="rectangle small">
+        <div id="watchlistTitle">Watchlist</div>
+        </div> 
+    </div>
+
+    <!-- imports supabase javascript library to html page -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/static/js/helpers.js"></script>
+    <script src="/static/js/tracker.js"></script>
+    <script>window.onload = loadWatchlist;</script>
+
+</body>
+        
+</html>

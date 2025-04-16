@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!-- Page Name -->
+    <title>Documentation</title>
+    <link href="static/css/global.css" type="text/css" rel="stylesheet"/>
+    <link href="static/css/documentation.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+    
+    <!-- Page Title -->
+    <h1>Stock Portfolio Tracker</h1>
+    
+    <!-- Subheadings with Navigation Links -->
+    <div class="subheadings">
+        <a href="{{ url_for('homepage') }}">Home</a> |
+        <!-- <a href="loginpage.html">Login</a> | -->
+        <a href="{{ url_for('login') }}">Login</a> |
+        <a href="{{ url_for('settings') }}">Account Settings</a> |
+        <a href="{{ url_for('documentation') }}" class="active">Documentation</a>
+    </div>
+    
+    <!-- Container for Rectangles -->
+    <div class="rectangle-container">
+        <!-- Container for Large Rectangle -->
+        <div class="rectangle large">
+            <main>
+                <section>
+                    <h2>yFinance</h2>
+                    <p>Serves as the primary data source for trading information</p>
+                    <ul>
+                        <a href="https://yfinance-python.org/index.html" target="_blank">https://yfinance-python.org/index.html</a>
+                    </ul>
+                    <hr>
+                </section>
+
+                <section>
+                    <h2>Yahoo Finance</h2>
+                    <p>Serves as the root data source that yFinance pulls from</p>
+                    <ul>
+                        <a href="https://finance.yahoo.com/" target="_blank">https://finance.yahoo.com/</a>
+                    </ul>
+                    <hr>
+                </section>
+                
+                <section>
+                    <h2>EDGAR Tools Python Package</h2>
+                    <p>Serves as the source for quarterly filings infomation via the SEC's filing access API</p>
+                    <p>CAUTION: There are multiple Python packages for EDGAR. Be sure to use EDGAR Tools when debugging</p>
+                    <ul>
+                        <a href="https://github.com/dgunning/edgartools" target="_blank">https://github.com/dgunning/edgartools</a>
+                    </ul>
+                    <hr>
+                </section>
+
+                <section>
+                    <h2>FAQ</h2>
+                    <ul>
+                        <strong>How frequently are prices updated?</strong><br>
+                        Prices updates are rate limited by Yahoo Finance and update in the yFinance python library every 15 minutes.
+                        <br>
+                        <br>
+                        <strong>How many stocks can I track?</strong><br>
+                        Users are welcome to track up to 10 stocks while in the free membership tier. Additional features can be unlocked with a premium subscription.
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+
+</body>
+    
+</html>

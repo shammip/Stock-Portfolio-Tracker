@@ -11,6 +11,7 @@ put your email in the placeholder inside the Main function.
 
 # will be used to retrieve more details on a given stock
 def get_stock_details(ticker):
+    stock_data = {}
     stock = yf.Ticker(ticker)
     hist = stock.history(period="2d")
     info = stock.info
@@ -22,7 +23,7 @@ def get_stock_details(ticker):
         latest_revenue = income_stmt.loc["Total Revenue", latest_date]
         return latest_revenue # this will always be for the year prior to current year. It is now 2025 so it will be for 2024
 
-    stock_data = {
+    stock_data[ticker] = {
         "ticker_symbol": ticker,
         "company_name": info["displayName"] if "displayName" in info else None,
         "industry": info["industry"] if "industry" in info else None,

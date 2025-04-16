@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!-- Page Name -->
+    <title>Account Settings</title>
+    <link href="static/css/global.css" type="text/css" rel="stylesheet"/>
+    <link href="static/css/settings.css" type="text/css" rel="stylesheet"/>
+</head>
+    
+<body>  
+    
+    <!-- Page Title -->
+    <h1>Stock Portfolio Tracker</h1>
+    
+    <!-- Subheadings with Navigation Links -->
+    <div class="subheadings">
+        <a href="{{ url_for('homepage') }}">Home</a> |
+        <!-- <a href="loginpage.html">Login</a> | -->
+        <a href="{{ url_for('login') }}">Login</a> |
+        <a href="{{ url_for('settings') }}" class="active">Account Settings</a> |
+        <a href="{{ url_for('documentation') }}">Documentation</a>
+    </div>
+    
+    <!-- Container for Rectangles -->
+    <div class="rectangle-container">
+        <!-- Display user information -->
+        <div class="rectangle large">
+            <table class="user-info-table">
+                <tr>
+                    <td><strong>Name: </strong></td>
+                    <td>name</td>
+                </tr>
+                <tr>
+                    <td><strong>Username: </strong></td>
+                    <td>username</td>
+                </tr>
+                <tr>
+                    <td><strong>Password: </strong></td>
+                    <td>********</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+        
+</html>
