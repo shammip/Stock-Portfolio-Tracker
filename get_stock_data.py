@@ -76,12 +76,15 @@ def get_watchlist_data(tickers):
                 raise ValueError("Not enough data to calculate.")
             else:
                 last_two_days = hist.tail(2)
-
+            
+            # truncate pct_change first
+            pct_change = ((last_two_days['Close'].iloc[-1] - last_two_days['Close'].iloc[-2]) / last_two_days['Close'].iloc[-2]) * 100
+            pct_change = round(pct_change, 2)
+            
             stocks_data[ticker] = {
                 "ticker_symbol": ticker,
                 "cur_price": info["currentPrice"] if "currentPrice" in info else None,
-                # maybe use pct_change to indicate red or green so that we can but the actual ppercentage where stock details is
-                "pct_change": ((last_two_days['Close'].iloc[-1] - last_two_days['Close'].iloc[-2]) / last_two_days['Close'].iloc[-2]) * 100
+                "pct_change": pct_change
             }
         except Exception as e:
             stocks_data[ticker] = {f"Could not fetch details for {ticker}: {str(e)}"}
