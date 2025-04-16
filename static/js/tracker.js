@@ -317,7 +317,24 @@ function yFiSearch(tickerToSearch) {
 		},
 		body: JSON.stringify({ 'searchText': tickerToSearch.value })				//js (object) dictionary converted to JSON string for server handling
 	})
+		////////////////////  stock details listed in html   ////////////////////
+		.then(response => response.json())										//JSON string converted to js object for js handling
+		.then(data => {															//data is js dictionary {item : details}, item is ticker symbol
+			companyName.textContent = data["company_name"];
+			companyTicker.textContent = data["ticker_symbol"];
+			Object.entries(data).forEach(([key, value]) => {
+				if (key != "company_name" && key != "ticker_symbol") {
+					const dataLine = document.createElement('span');
+					dataLine.textContent = `${key} : ${value}`;
+					dataLine.id = key;
+					dataLine.className = "dataLine";
+					dataWindow.appendChild(dataLine);
+				}
+			})
+		})
+	}
 
+	/*
 	////////////////////  stock details listed in html   ////////////////////
 		.then(response => response.json())										//JSON string converted to js object for js handling
 		.then(data => {															//data is js dictionary {item : details}, item is ticker symbol
@@ -335,8 +352,8 @@ function yFiSearch(tickerToSearch) {
 				})
 			})
 		})
-		.catch(error => console.error('Error:', error));		
-}
+		.catch(error => console.error('Error:', error));
+		*/
 
 ////////////////////  stockDetails function separates yFiSearch and button change, gives DOM chance to update  ////////////////////
 ////////////////////  as opposed to button change being inside yFiSearch  ////////////////////
