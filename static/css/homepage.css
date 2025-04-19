@@ -33,7 +33,7 @@ body {
     overflow-y: auto; /*vertical scroll bar if buttons overflow*/
     overflow-x: hidden; /*any button horizontal overflow hides*/
     width: 280px; /* rectangle width */
-    height: 400px; /* rectangle height */
+    height: 416px; /* rectangle height */
     border: 2px solid black; /* border format */
     border-radius: 8px; /* rounded border */
     font-size: 20px; /* font size */
@@ -84,7 +84,7 @@ body {
 
 /* Search Bar Format */
 input {
-    width: 740px; /* width of search bar */
+    width: 630px; /* width of search bar */
     height: 40px; /* height of search bar */
     background-color: lightgray; /* background color */
     border: 2px solid black; /* border format */
@@ -169,10 +169,12 @@ input {
 #companyTicker {
     margin-bottom: 8px;
     text-align: left;
+    color: #0077cc;
 }
 
 #companyName {
     text-align: left;
+    color: #003366;
 }
 
 #watchlistTitle {
@@ -188,4 +190,10 @@ input {
     font-size: 30px;
     color: #003366;
     text-align: center;
+}
+
+.dataLine {
+    margin: 4px 0;
+    font-size: 16px;
+    text-align: left;
 }
