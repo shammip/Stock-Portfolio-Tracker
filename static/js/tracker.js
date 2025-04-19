@@ -309,6 +309,22 @@ function yFiSearch(tickerToSearch) {
 	const companyName = document.getElementById('companyName');
 	companyName.textContent = '';
 
+	//////////////////// create labels to display stock info   ////////////////////
+	const labels = {
+		"52wk_high": "52 Week High",
+		"52wk_low": "52 Week Low",
+		annual_revenue: "Annual Revenue",
+		avg_volume: "Average Volume",
+		cur_price: "Current Price",
+		curr_volume: "Current Volume",
+		day_high: "Day High",
+		day_low: "Day Low",
+		day_open: "Day Open",
+		industry: "Industry",
+		market_cap: "Market Cap",
+		pct_change: "% Change"
+	};
+
 	////////////////////  call function to search yFinance for searchText  ////////////////////
 	return fetch('/get_stock_details', {
 		method: 'POST',															//POST for sending data to server (GET just for getting data)
@@ -325,8 +341,9 @@ function yFiSearch(tickerToSearch) {
 			Object.entries(data).forEach(([key, value]) => {
 				if (key != "company_name" && key != "ticker_symbol") {
 					const dataLine = document.createElement('p');
-					dataLine.textContent = `${key} : ${value}`;
-					dataLine.id = key;
+					const label = labels[key] || key; //use human-readable label, if avaiable 
+					dataLine.textContent = `${label} : ${value}`; //replace key with label
+					// dataLine.id = key;
 					dataLine.className = "dataLine";
 					dataWindow.appendChild(dataLine);
 				}
