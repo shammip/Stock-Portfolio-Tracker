@@ -14,7 +14,7 @@ body {
 .rectangle.large {
     position: relative; 
     display: flex; /* proper alignment */
-    width: 480px; /* rectangle width */
+    width: 420px; /* rectangle width */
     height: 400px; /* rectangle height */
     border: 2px solid black; /* border format */
     border-radius: 8px; /* rounded border */
@@ -28,6 +28,7 @@ body {
 
 /* Watchlist Format */
 .rectangle.small {
+    position: relative; 
     display: flex; /* proper alignment */
     flex-direction: column; /*stacks the buttons vertically*/
     overflow-y: auto; /*vertical scroll bar if buttons overflow*/
