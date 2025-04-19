@@ -324,7 +324,7 @@ function yFiSearch(tickerToSearch) {
 			companyTicker.textContent = data["ticker_symbol"];
 			Object.entries(data).forEach(([key, value]) => {
 				if (key != "company_name" && key != "ticker_symbol") {
-					const dataLine = document.createElement('span');
+					const dataLine = document.createElement('p');
 					dataLine.textContent = `${key} : ${value}`;
 					dataLine.id = key;
 					dataLine.className = "dataLine";
