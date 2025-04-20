@@ -322,11 +322,15 @@ function yFiSearch(tickerToSearch) {
 		.then(data => {															//data is js dictionary {item : details}, item is ticker symbol
 			companyName.textContent = data["company_name"];
 			companyTicker.textContent = data["ticker_symbol"];
-			Object.entries(data).forEach(([key, value]) => {
+			const display_order = ["cur_price", "pct_change", "day_open", "day_high", "day_low", 
+				"52wk_high", "52wk_low", "market_cap", "annual_revenue"];
+			display_order.forEach(key => {
+				const value = data[key];
 				if (key != "company_name" && key != "ticker_symbol") {
 					if (key === "cur_price") { //display current price
 						const cur_price_ = document.createElement('p');
-						cur_price_.textContent = `$ ${value}`;
+						const value_rounded = Number(value).toFixed(2);
+						cur_price_.textContent = `$${value_rounded}`;
 						cur_price_.id = key;
 						cur_price_.className = "cur_price_";
 						dataWindow.appendChild(cur_price_)
@@ -339,31 +343,76 @@ function yFiSearch(tickerToSearch) {
 						} else {
 							pct_change_.style.color = "darkred";
 						}
-						pct_change_.textContent = `Percent change: ${value}%`;
+						pct_change_.textContent = `${value}%`;
 						pct_change_.id = key;
 						pct_change_.className = "pct_change_";
 						dataWindow.appendChild(pct_change_)
 					}
 					if (key === "day_high") { //display day high
 						const day_high_ = document.createElement('p');
-						day_high_.textContent = `Day high: $${value}`;
+						const value_rounded = Number(value).toFixed(2);
+						day_high_.textContent = `Day High: $${value_rounded}`;
 						day_high_.id = key;
 						day_high_.className = "day_high_";
 						dataWindow.appendChild(day_high_)
 					}
 					if (key === "day_low") { //display day low
 						const day_low_ = document.createElement('p');
-						day_low_.textContent = `Day low: $${value}`;
+						const value_rounded = Number(value).toFixed(2);
+						day_low_.textContent = `Day Low: $${value_rounded}`;
 						day_low_.id = key;
 						day_low_.className = "day_low_";
 						dataWindow.appendChild(day_low_)
 					}
 					if (key === "day_open") { //display day open
 						const day_open_ = document.createElement('p');
-						day_open_.textContent = `Day open: $${value}`;
+						const value_rounded = Number(value).toFixed(2);
+						day_open_.textContent = `Day Open: $${value_rounded}`;
 						day_open_.id = key;
 						day_open_.className = "day_open_";
 						dataWindow.appendChild(day_open_)
+					}
+					if (key === "52wk_high") { //display year high
+						const year_high_ = document.createElement('p');
+						const value_rounded = Number(value).toFixed(2);
+						year_high_.textContent = `Year High: $${value_rounded}`;
+						year_high_.id = key;
+						year_high_.className = "year_high_";
+						dataWindow.appendChild(year_high_)
+					}
+					if (key === "52wk_low") { //display year low
+						const year_low_ = document.createElement('p');
+						const value_rounded = Number(value).toFixed(2);
+						year_low_.textContent = `Year Low: $${value_rounded}`;
+						year_low_.id = key;
+						year_low_.className = "year_low_";
+						dataWindow.appendChild(year_low_)
+					}
+					if (key === "market_cap") { //display market cap
+						const market_cap_ = document.createElement('p');
+						let value_rounded = Number(value).toFixed(2);
+						if (value_rounded >= 1_000_000_000) {
+							value_rounded = `${(value_rounded / 1_000_000_000).toFixed(2)}B`;
+						} else if (value_rounded >= 1_000_000) {
+							value_rounded = `${(value_rounded / 1_000_000).toFixed(2)}M`;
+						}
+						market_cap_.textContent = `Market Cap: $${value_rounded}`;
+						market_cap_.id = key;
+						market_cap_.className = "market_cap_";
+						dataWindow.appendChild(market_cap_)
+					}
+					if (key === "annual_revenue") { //display annual revenue
+						const annual_revenue_ = document.createElement('p');
+						let value_rounded = Number(value).toFixed(2);
+						if (value_rounded >= 1_000_000_000) {
+							value_rounded = `${(value_rounded / 1_000_000_000).toFixed(2)}B`;
+						} else if (value_rounded >= 1_000_000) {
+							value_rounded = `${(value_rounded / 1_000_000).toFixed(2)}M`;
+						}
+						annual_revenue_.textContent = `Annual Revenue: $${value_rounded}`;
+						annual_revenue_.id = key;
+						annual_revenue_.className = "annual_revenue_";
+						dataWindow.appendChild(annual_revenue_)
 					}
 				}
 			})
