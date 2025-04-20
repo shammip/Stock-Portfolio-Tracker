@@ -309,22 +309,6 @@ function yFiSearch(tickerToSearch) {
 	const companyName = document.getElementById('companyName');
 	companyName.textContent = '';
 
-	//////////////////// create labels to display stock info   ////////////////////
-	const labels = {
-		"52wk_high": "52 Week High",
-		"52wk_low": "52 Week Low",
-		annual_revenue: "Annual Revenue",
-		avg_volume: "Average Volume",
-		cur_price: "Current Price",
-		curr_volume: "Current Volume",
-		day_high: "Day High",
-		day_low: "Day Low",
-		day_open: "Day Open",
-		industry: "Industry",
-		market_cap: "Market Cap",
-		pct_change: "% Change"
-	};
-
 	////////////////////  call function to search yFinance for searchText  ////////////////////
 	return fetch('/get_stock_details', {
 		method: 'POST',															//POST for sending data to server (GET just for getting data)
@@ -340,12 +324,47 @@ function yFiSearch(tickerToSearch) {
 			companyTicker.textContent = data["ticker_symbol"];
 			Object.entries(data).forEach(([key, value]) => {
 				if (key != "company_name" && key != "ticker_symbol") {
-					const dataLine = document.createElement('p');
-					const label = labels[key] || key; //use human-readable label, if avaiable 
-					dataLine.textContent = `${label} : ${value}`; //replace key with label
-					// dataLine.id = key;
-					dataLine.className = "dataLine";
-					dataWindow.appendChild(dataLine);
+					if (key === "cur_price") { //display current price
+						const cur_price_ = document.createElement('p');
+						cur_price_.textContent = `$ ${value}`;
+						cur_price_.id = key;
+						cur_price_.className = "cur_price_";
+						dataWindow.appendChild(cur_price_)
+					}
+					if (key === "pct_change") { //display percent change
+						const pct_change_num = Number(value);
+						const pct_change_ = document.createElement('p');
+						if (pct_change_num >= 0) {
+							pct_change_.style.color = "green";
+						} else {
+							pct_change_.style.color = "darkred";
+						}
+						pct_change_.textContent = `Percent change: ${value}%`;
+						pct_change_.id = key;
+						pct_change_.className = "pct_change_";
+						dataWindow.appendChild(pct_change_)
+					}
+					if (key === "day_high") { //display day high
+						const day_high_ = document.createElement('p');
+						day_high_.textContent = `Day high: $${value}`;
+						day_high_.id = key;
+						day_high_.className = "day_high_";
+						dataWindow.appendChild(day_high_)
+					}
+					if (key === "day_low") { //display day low
+						const day_low_ = document.createElement('p');
+						day_low_.textContent = `Day low: $${value}`;
+						day_low_.id = key;
+						day_low_.className = "day_low_";
+						dataWindow.appendChild(day_low_)
+					}
+					if (key === "day_open") { //display day open
+						const day_open_ = document.createElement('p');
+						day_open_.textContent = `Day open: $${value}`;
+						day_open_.id = key;
+						day_open_.className = "day_open_";
+						dataWindow.appendChild(day_open_)
+					}
 				}
 			})
 		})
