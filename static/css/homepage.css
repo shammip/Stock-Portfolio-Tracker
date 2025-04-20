@@ -165,6 +165,7 @@ input {
 #username {
     color: #003366;
     font-size: 18px;
+    font-weight: bold;
 }
 
 #companyTicker, #companyName {
@@ -215,16 +216,51 @@ input {
     margin: 4px 0;
     font-size: 20px;
     text-align: left;
+    font-weight: normal;
 }
 
 .day_low_ {
     margin: 4px 0;
     font-size: 20px;
     text-align: left;
+    font-weight: normal;
 }
 
 .day_open_ {
     margin: 4px 0;
     font-size: 20px;
+    text-align: left;  
+    font-weight: normal;
+}
+
+.year_high_ {
+    margin: 4px 0;
+    font-size: 20px;
     text-align: left;
+    color: grey; 
+    font-weight: normal; 
+}
+
+.year_low_ {
+    margin: 4px 0;
+    font-size: 20px;
+    text-align: left;
+    color: grey; 
+    font-weight: normal;
+}
+
+.market_cap_ {
+    margin: 4px 0;
+    font-size: 20px;
+    text-align: left;
+    color: lightslategray; 
+    font-weight: normal;
+}
+
+.annual_revenue_ {
+    margin: 4px 0;
+    font-size: 20px;
+    text-align: left;
+    color: lightslategray; 
+    font-weight: normal;
 }
