@@ -1,19 +1,25 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
+.articles-title {
+    text-align: center;
 }
 
-h1 {
-   text-align: center;
-}
-
-h2 {
+h3 {
     font-size: 26px;
     margin-bottom: 15px;
 }
 
-body {
+main a:link {
+    color: #008f6b;
+    text-decoration: none;
+}
+
+main a:visited {
+    color: #c05959;
+    text-decoration: none;
+}
+
+main {
     margin: auto;
-    width: 60%;
+    width: 80%;
 }
 
 .box-section {
@@ -40,12 +46,15 @@ article {
 }
 
 .article-title {
-    float:inline-start;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 18px;
 }
 
 .date {
     float:inline-end;
+    margin-bottom: 5px;
 }
 
 .clearfix::after {
@@ -55,8 +64,9 @@ article {
 }
 
 .publication-name {
-    margin-top: 0px;
+    float:inline-start;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 table {

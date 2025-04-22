@@ -299,6 +299,39 @@ async function removeFromWatchlist() {
 	loadWatchlist();
 }
 
+async function add_news_button() {
+
+	////////////////////  from helpers.js  ////////////////////
+	if (!(tickerText = findTicker())) return;
+
+	////////////////////  get stock display window object  ////////////////////
+	const stockDisplay = document.getElementById('stockDisplay');
+	if (!stockDisplay){
+		console.log('Stock Diplay Window object not found');
+		return;
+	}
+
+	////////////////////  remove previous news buttons (screws up => sometimes multiple buttons)  ////////////////////
+	const duplicateButtons = document.querySelectorAll("#newsButton");
+	duplicateButtons.forEach(button => {
+		stockDisplay.removeChild(button);
+	});
+
+	////////////////////  build news button  ////////////////////
+	const newsButton = document.createElement("button");
+	newsButton.innerHTML = "News Articles";
+	newsButton.id = "newsButton";
+	newsButton.className = "news_article";
+	newsButton.onclick = () => {
+		location.href = `news/${tickerText}`;
+	}
+	stockDisplay.appendChild(newsButton);
+
+	////////////////////  unfocus cursor from button (no accidental clicks) ////////////////////
+	newsButton.blur();
+	return;
+}
+
 function yFiSearch(tickerToSearch) {
 
 	////////////////////  clear previous data   ////////////////////
@@ -358,7 +391,10 @@ function yFiSearch(tickerToSearch) {
 ////////////////////  stockDetails function separates yFiSearch and button change, gives DOM chance to update  ////////////////////
 ////////////////////  as opposed to button change being inside yFiSearch  ////////////////////
 function stockDetails(ticker) {
-	timeFunction( () => yFiSearch(ticker), "yFiSearch" ).then( () => add_remove_stock_button() );
+	timeFunction( () => yFiSearch(ticker), "yFiSearch" ).then( () => {
+		add_remove_stock_button();
+		add_news_button();
+	});
 }
 
 ////////////////////  details search from search bar  ////////////////////

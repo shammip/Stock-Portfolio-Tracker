@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <head>
     <title>Stock News Articles</title>
-    <link rel="stylesheet" href="/static/css/news.css">
+    <link href="/static/css/global.css" type="text/css" rel="stylesheet"/>
+    <link href="/static/css/news.css" rel="stylesheet"/>
 </head>
 <header>
-    <h1><span>{{ticker}}</span> Articles</h1>
+    <h1>Stock Portfolio Tracker</h1>
+    
+    <!-- Subheadings with Navigation Links -->
+    <div class="subheadings">
+        <a href="{{ url_for('homepage') }}">Home</a> |
+        <!-- <a href="loginpage.html">Login</a> | -->
+        <a href="{{ url_for('login') }}">Login</a> |
+        <a href="{{ url_for('settings') }}">Account Settings</a> |
+        <a href="{{ url_for('documentation') }}">Documentation</a>
+    </div>
 </header>
 <body>
     <main>
+        <h2 class="articles-title"><span>{{ticker}}</span> Articles</h1>
         <section class="box-section">
-            <h2>News</h2>
+            <h3>News</h2>
             <div class="dividing-line article-width"></div>
             <div id="newslist">
                 {% for article in articles %}
                 <article class="article-width">
                     <div class="clearfix">
-                        <h3 class="article-title">{{article.title}}</h3>
+                        <p class="publication-name">{{article.publisher}}</p>
                         <p class="date">{{article.pubDate}}</p>
                     </div>
-                    <p class="publication-name">{{article.publisher}}</p>
+                    <a href={{article.url}} target="_blank"><h3 class="article-title">{{article.title}}</h3></a>
+                    <hr>
                 </article>
                 {% endfor %}
             </div>
         </section>
         <section class="box-section">
-            <h2>SEC Filings</h2>
+            <h3>SEC Filings</h2>
             <div class="dividing-line"></div>
             <table>
                 <tr class="table-header">
@@ -32,11 +44,13 @@
                     <th>Form</th>
                     <th>URL</th>
                 </tr>
+                {% for filing in filings %}
                 <tr>
-                    <td>12/12/25</td>
-                    <td>4</td>
-                    <td>link to filing</td>
+                    <td>{{filing.date}}</td>
+                    <td>{{filing.description}}</td>
+                    <td><a href={{filing.url}} target="_blank">{{filing.url}}</a></td>
                 </tr>
+                {% endfor %}
             </table>
         </section>
     </main>
