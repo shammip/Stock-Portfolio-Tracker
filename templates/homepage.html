@@ -20,7 +20,7 @@
         <a href="{{ url_for('login') }}">Login</a> |
         <a href="{{ url_for('settings') }}">Account Settings</a> |
         <a href="{{ url_for('documentation') }}">Documentation</a>
-        <div id="username">hi_roller_31</div>
+        <div id="username">""</div>
     </div>
     
     <!-- Search Bar -->
@@ -39,10 +39,6 @@
             <h2 id="companyTicker"></h2>
             <h3 id="companyName"></h3>
             <div id="stockData"></div>
-            <!-- <script>
-                let ticker = document.getElementById("companyTicker").textContent;
-            </script>
-            <form action="news.html/$(ticker)"><button type="submit" class="news_article">News Article</button></form> --> -->
         </div>
         
         <!-- Display Watchlist -->
@@ -55,7 +51,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="/static/js/helpers.js"></script>
     <script src="/static/js/tracker.js"></script>
-    <script>window.onload = loadWatchlist;</script>
+    <script>
+        window.onload = function () {
+            console.log("login page", sessionStorage.getItem('username'));
+            const start_time = sessionStorage.getItem("start_time");
+            const userName = document.getElementById("username");
+            
+            if (sessionStorage.getItem('username')) {
+                userName.innerHTML = sessionStorage.getItem("username");
+            }
+            //if (Date.now() - start_time < 3600000) {
+                
+            //}
+            
+            else { userName.innerHTML = ""; }
+
+            loadWatchlist();
+        }
+    </script>
 
 </body>
         

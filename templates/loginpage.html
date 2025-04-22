@@ -26,18 +26,66 @@
     <div class="rectangle-container">
         <!-- Display Login Inputs -->
         <div class="rectangle large">
-            <form>
+            <form id="loginForm">
                 <!-- Username & Password Inputs -->
-                <input type="text" placeholder="Username">
+                <input type="text" id="username" placeholder="Username">
                 <br><br>
-                <input type="text" placeholder="Password">
+                <input type="text" id="password" placeholder="Password">
                 <br><br>
                 <!-- Login Button -->
-                <button class="login_button">Login</button>
+                <button type="submit" id="loginBtn" class="login_button">Login</button>
             </form>
         </div>
     </div>
     
+<!-- Supabase + login logic -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const supabaseClient = supabase.createClient('https://ssgnftblyikjygsmiooy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzZ25mdGJseWlranlnc21pb295Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAzNjY3ODMsImV4cCI6MjA1NTk0Mjc4M30.gQBTPyOD_oP8BdRBdkO6Ye3vZzhpp2RTX9yYxaLXL_8');
+
+    async function handleLogin(username, password) {
+        const { data, error } = await supabaseClient
+        .from('user_information')
+        .select()
+        .eq('username', username.trim()).single();
+
+        if (error && error.code === 'PGRST116') {
+            const { error: signupError } = await supabaseClient
+            .from('user_information')
+            .insert([{ username, password }]);
+
+            if (signupError) {
+                alert('Error creating account.');
+                return;
+            }
+
+            alert('Account created!');
+            sessionStorage.setItem('username', username);
+            sessionStorage.setItem('start_time', Date.now());
+            window.location.href = '/';
+        }
+
+        else if (data && data.password === password.trim()) {
+            alert('Login successful!');
+            sessionStorage.setItem('username', username);
+            sessionStorage.setItem('start_time', Date.now());
+            console.log("login page", sessionStorage.setItem('username', username));
+            window.location.href = '/';
+        } 
+        else {
+            alert('Incorrect password or unknown error.');
+        }
+    }
+
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    await handleLogin(username, password);
+});
+
+</script>
+
 </body>
         
 </html>
