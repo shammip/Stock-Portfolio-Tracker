@@ -19,10 +19,11 @@ def documentation():
 def settings():
     return render_template('settings.html')
 
-@app.route("/news")
+@app.route("/news/<ticker>")
 def news_page(ticker):
     articles = get_stock_news(ticker)
-    return render_template('news.html', ticker=ticker, articles=articles)
+    filings = get_stock_filings(ticker)
+    return render_template('news.html', ticker=ticker, articles=articles, filings=filings)
 
 @app.route('/get_stock_details', methods = ['POST'])
 def get_stock_details_route():

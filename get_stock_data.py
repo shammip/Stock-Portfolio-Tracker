@@ -130,8 +130,17 @@ def get_stock_filings(ticker, userEmail='stocktracker@gmail.com'):
             axis=1
         )
 
+        #rename columns to simpler names
+        df = df.rename(columns ={
+            'filing_date': 'date',
+            'primaryDocDescription': 'description',
+            'document_url': 'url'
+        })
+
         # remove accession_number
-        return df[['filing_date', 'primaryDocDescription', 'document_url']] # dataframe with columns 'filing_date', 'primaryDocDescription', 'document_url'
+        # return dataframe converted to a dictionary
+        return df[['date', 'description', 'url']].to_dict(orient='records')
+    
     except Exception as e:
         return pd.DataFrame([{f"Could not fetch filings for {ticker}: {str(e)}"}])
 
