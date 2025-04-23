@@ -24,7 +24,8 @@ For the homepage, the entirety of the minimum viable product was produced.
 - What you had planned for the future <br>
   -Additional information in the stock details window, such as a line graph demonstrating the stocks performance.<br>
   -Robust fall back mechanisms in the backend to gracefully handle failed API calls.<br>
-  -More frequent data retrieval with rotating proxies and cool-off periods to avoid blacklisting.
+  -More frequent data retrieval with rotating proxies and cool-off periods to avoid blacklisting.<br>
+  -Connect user information with the Account Settings page so that the username and password (hidden by asterisk) would be displayed.<br>
 
 - Any known problems (bugs, issues)
 
