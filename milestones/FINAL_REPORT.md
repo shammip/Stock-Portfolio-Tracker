@@ -35,6 +35,7 @@ For the homepage, the entirety of the minimum viable product was produced.
 - Trello: <br>
 
 - Python: <br>
+Libraries used included Edgartools (API wrapper of EDGAR), yfinance (3rd party library to access yahoo finance), Pandas, and Numpy. 4 functions were defined: get_stock_data(), get_watchlist_data(), get_stock_news(), get_stock_filings(). These allowed us to fetch in-depth information about a stock (get_stock_data), a truncated version of that information for the watchlist (get_watchlist_data), news articles related to a stock (get_stock_news), and any documents filed to the SEC by the companies (get_stock_filings). Additionally, the Python Unittest module was used to create unit tests along the way for each of the aforementioned functions, ensuring that the appropriate input and expected output were in alignment with our goals.
 
 - Supabase: <br>
 Supabase is an opensource database hosting site chosen to store the data for this app. It was chosen not only because it was free, but because it offered its users a prebuilt API with which to interact with, the **supabase-js client library**.  The access the API offered that was used were methods to insert and delete data from the database (eg; new usernames and passwords, adding and removing stocks from watchlists), and query data in the database (eg; username and password validity, stocks associated with this user's watchlist.) Additional features this API offered that were anticipated to be needed, but were not used were methods for more stringent user authentication. <br>
