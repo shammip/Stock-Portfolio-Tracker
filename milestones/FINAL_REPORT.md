@@ -1,10 +1,8 @@
 # Final Report
 
-**Project Title:** <br>
-Stock Portfolio Tracker
+**Project Title:** Stock Portfolio Tracker
 
-**Team:** <br>
-Ctrl Alt Elite
+**Team:** Ctrl Alt Elite
 
 **Project Tracker:** <br>
 https://trello.com/invite/b/67aa8dacedd351d2afd0c7ff/ATTI8e3263db6394dee75751de9975d9807881DF3439/team-3-ctrl-alt-elite
@@ -14,22 +12,24 @@ https://trello.com/invite/b/67aa8dacedd351d2afd0c7ff/ATTI8e3263db6394dee75751de9
 **Version Control Repository:** <br>
 https://github.com/ScottWilson1/Stock-Portfolio-Tracker.git
 
-**Final Status Report:**
-- What you completed <br>
+**Public Hosting Site:** <br>
+
+### Final Status Report:
+- What you completed: <br>
 With the final version of the stock tracking app, the homepage had a search bar for the user to interface with Yfinance and look up information about specific stocks. This information could be displayed in the stock details area of the homepage.  Next to the details display section was the watchlist section, with the user's saved stocks displayed as buttons.  When clicked, the stock details portion would be populated with details about that stock.  When a stock's displayed were displayed, interactive buttons would also become available. One button provided the ability to add or remove the displayed stock from the watchlist. Another "news" button would direct the user to a new page displaying recents articles about the stock as well as the most recent SEC filings for the stock.
 
-- What you were in the middle of implementing <br>
+- What you were in the middle of implementing: <br>
 For the homepage, the entirety of the minimum viable product was produced.
 
-- What you had planned for the future <br>
+- What you had planned for the future: <br>
   -Additional information in the stock details window, such as a line graph demonstrating the stocks performance.<br>
   -Robust fall back mechanisms in the backend to gracefully handle failed API calls.<br>
   -More frequent data retrieval with rotating proxies and cool-off periods to avoid blacklisting.<br>
   -Connect user information with the Account Settings page so that the username and password (hidden by asterisk) would be displayed.<br>
 
-- Any known problems (bugs, issues)
+- Any known problems (bugs, issues):
 
-**Tools** <br>
+### Tools: <br>
 
 - Git Version Control and GitHub Project Repo: <br>
 
@@ -49,4 +49,3 @@ HTML was used to structure web page layouts to define static and dynamic content
 
 - Javascript: <br>
 
-**Public Hosting Site** <br>
