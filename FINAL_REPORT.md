@@ -8,9 +8,10 @@ Jimmy Hundertmark
 Scott Wilson
 
 **Project tracker link (Instructor can access):** https://trello.com/invite/b/67aa8dacedd351d2afd0c7ff/ATTI8e3263db6394dee75751de9975d9807881DF3439/team-3-ctrl-alt-elite
-You may need to log in to Trello first
+(You may need to log in to Trello first)
 
-**Link to 5 minute video:** a demo for a potential customer (could be same one you used in the presentation)
+**Link to 5 minute video:**
+https://o365coloradoedu-my.sharepoint.com/:v:/g/personal/scwi7689_colorado_edu/EcaU8npahzZHiAU_m70iopAB-hjbN9ZM3ZnVeWsHMPd4qw?e=lFCrwC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 **Version control repository link (make sure the instructor(s) have access):** https://github.com/ScottWilson1/Stock-Portfolio-Tracker
 
