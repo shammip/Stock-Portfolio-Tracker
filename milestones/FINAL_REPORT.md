@@ -29,10 +29,22 @@ For the homepage, the entirety of the minimum viable product was produced.
 - Any known problems (bugs, issues)
 
 **Tools** <br>
-- Supabase <br>
-Supabase is an opensource datbase hosting site chosen to store the data for this app. It was chosen for not only because it was free, but because it offered its users a prebuilt API with which to interect with it, the **supabase-js client library**.  The access the API offered that was used were methods to insert and delete data from the database (eg; new usernames and passwords, adding and removing stocks from watchlists), and query data in the database (eg; username and password validity, stocks associated with this user's watchlist.) Additional features this API offered that were anticiapted to be needed, but were not used were methods for more stringent user authentication. <br>
 
--Flask <br>
-Flask was used to navigate between the various HTML pages of the app via route functions (eg; homepage, login page, documentation, account settings).  It also provided integration between the front end Javascript manipulating the user interface and the API layer providing the yFinance stock information.  Functions from the flask app would be "fetched" from Javascript, and these functions would in turn call the YFinance functions in the API layer.  The data from this would be returned as a python object (typically a dictionary), and converted to a Javascript usable JSON response by Flask before returning it to the Javascript. <br>
+- Git Version Control and GitHub Project Repo: <br>
 
-**Public Hosting Site**
+- Trello: <br>
+
+- Python: <br>
+
+- Supabase: <br>
+Supabase is an opensource database hosting site chosen to store the data for this app. It was chosen not only because it was free, but because it offered its users a prebuilt API with which to interact with, the **supabase-js client library**.  The access the API offered that was used were methods to insert and delete data from the database (eg; new usernames and passwords, adding and removing stocks from watchlists), and query data in the database (eg; username and password validity, stocks associated with this user's watchlist.) Additional features this API offered that were anticipated to be needed, but were not used were methods for more stringent user authentication. <br>
+
+- Flask: <br>
+Flask was used to navigate between the various HTML pages of the app via route functions (eg; homepage, login page, documentation, account settings). It also provided integration between the front end Javascript manipulating the user interface and the API layer providing the yFinance stock information. Functions from the flask app would be "fetched" from Javascript, and these functions would in turn call the YFinance functions in the API layer. The data from this would be returned as a python object (typically a dictionary), and converted to a Javascript usable JSON response by Flask before returning it to the Javascript. <br>
+
+- HTML & CSS: <br>
+HTML was used to structure web page layouts to define static and dynamic content. Static elements include page name, header, subheadings and search bar while dynamic content consists of user-specific data, such as stock information. CSS was used to style interface to maintain a consistent visual design across all web pages such as formatting for header and subheadings, while also implementing page-specific styling such as stock display rectangle on the homepage. Overall, HTML and CSS are great foundational tools for web development. <br>
+
+- Javascript: <br>
+
+**Public Hosting Site** <br>
