@@ -22,7 +22,9 @@ With the final version of the stock tracking app, the homepage had a search bar 
 For the homepage, the entirety of the minimum viable product was produced.
 
 - What you had planned for the future <br>
-The anticipated next features would have been additional information in the stock details window, such as a line graph demonstrating the stocks performance.
+  -Additional information in the stock details window, such as a line graph demonstrating the stocks performance.<br>
+  -Robust fall back mechanisms in the backend to gracefully handle failed API calls.<br>
+  -More frequent data retrieval with rotating proxies and cool-off periods to avoid blacklisting.
 
 - Any known problems (bugs, issues)
 
