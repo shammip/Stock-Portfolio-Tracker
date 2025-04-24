@@ -29,25 +29,25 @@ https://stock-portfolio-tracker-vu4z.onrender.com <br>
 
 Here's a list of the pages on our site and the functionality implemented on each: <br>
 
-<u>Stock homepage</u> <br>
+<ins>Stock homepage</ins> <br>
 - Add stock to watchlist
 - Remove stock from watchlist
 - Search for stock by entering the stock symbol
 - View stock details
 
-<u>Stock News page</u> <br>
+<ins>Stock News page</ins> <br>
 - Links to ten latest news articles about selected stock
 - Links to the ten latest SEC filings for selected stock
 
-<u>Login page</u> <br>
+<ins>Login page</ins> <br>
 - Create a new account
 - Login to existing account
 - Error handling for entering the wrong password
 
-<u>Account Settings page</u> <br>
+<ins>Account Settings page</ins> <br>
 - Display user account information (currently hardcoded)
 
-<u>Documentation page</u> <br>
+<ins>Documentation page</ins> <br>
 - List of the most important tools used to build the site
 - FAQs for how to use the site
 
