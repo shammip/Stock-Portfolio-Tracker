@@ -4,7 +4,8 @@
 
 **Team:** Ctrl Alt Elite
 
-**Project Tracker:** https://trello.com/invite/b/67aa8dacedd351d2afd0c7ff/ATTI8e3263db6394dee75751de9975d9807881DF3439/team-3-ctrl-alt-elite
+**Project Tracker:** <br>
+https://trello.com/invite/b/67aa8dacedd351d2afd0c7ff/ATTI8e3263db6394dee75751de9975d9807881DF3439/team-3-ctrl-alt-elite
 
 **Team members:** <br>
 Brendan McDonald <br>
@@ -16,9 +17,11 @@ Scott Wilson <br>
 **Demo Video:** <br>
 https://o365coloradoedu-my.sharepoint.com/:v:/g/personal/scwi7689_colorado_edu/EcaU8npahzZHiAU_m70iopAB-hjbN9ZM3ZnVeWsHMPd4qw?e=lFCrwC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 
-**Version Control Repository:** https://github.com/ScottWilson1/Stock-Portfolio-Tracker.git
+**Version Control Repository:** <br>
+https://github.com/ScottWilson1/Stock-Portfolio-Tracker.git <br>
 
-**Public Hosting Site:** 
+**Public Hosting Site:** <br>
+https://stock-portfolio-tracker-vu4z.onrender.com <br>
 
 ### Final Status Report:
 **What you completed:** <br>
@@ -26,25 +29,25 @@ https://o365coloradoedu-my.sharepoint.com/:v:/g/personal/scwi7689_colorado_edu/E
 
 Here's a list of the pages on our site and the functionality implemented on each: <br>
 
-Stock homepage <br>
+<u>Stock homepage</u> <br>
 - Add stock to watchlist
 - Remove stock from watchlist
 - Search for stock by entering the stock symbol
 - View stock details
 
-Stock News page <br>
+<u>Stock News page</u> <br>
 - Links to ten latest news articles about selected stock
 - Links to the ten latest SEC filings for selected stock
 
-Login page <br>
+<u>Login page</u> <br>
 - Create a new account
 - Login to existing account
 - Error handling for entering the wrong password
 
-Account Settings page <br>
+<u>Account Settings page</u> <br>
 - Display user account information (currently hardcoded)
 
-Documentation page <br>
+<u>Documentation page</u> <br>
 - List of the most important tools used to build the site
 - FAQs for how to use the site
 
