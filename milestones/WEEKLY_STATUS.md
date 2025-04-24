@@ -21,6 +21,7 @@
 
  <strong>This sprint's focus is:</strong>
   * Create a global CSS file
+  * Login/logout functionality
 
  ## Week 8,&nbsp; 3/31 - 4/06 &nbsp; Status: <span style="color: green">On Track</span>
 
