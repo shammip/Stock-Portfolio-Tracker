@@ -63,7 +63,7 @@ Here's a list of the pages on our site and the functionality implemented on each
 **Any known problems (bugs, issues):**
 On the Login page, if you click the Login button when the username or password fields are empty, the user is logged out of the site. On the bright side, this bug ended up being a useful feature for testing.
 
-### Tools: <br>
+### Tools and Challenges: <br>
 
 **Git Version Control and GitHub Project Repo:** <br>
 - In the beginning, some team members created branches with their names and continued to work on their branch. Halfway through the project, the team decided that it would be better if we created branches based on the task at hand and after merging the branch, deleting it. This process really kept team members informed about what everyone was working on.<br>
@@ -97,5 +97,3 @@ On the Login page, if you click the Login button when the username or password f
 **Javascript:** <br>
 - JS files were written as frontend scripts to manipulate the GUI.  Javascript enabled dynamic features such as buttons (eg; news, add/remove stocks) that are available when needed and disappear when their fuctionality is not applicable.  The scripts were also written to post the data acquired by the API to the HTML pages.
 - The API offered by Supabase, supabase-js client library, is also written in Javascript.  The functionality used from this API is discussed in the Supabase section of this report.
-
-### Project Challenges:
