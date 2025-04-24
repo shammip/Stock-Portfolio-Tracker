@@ -11,6 +11,10 @@
 
  
 <strong>This sprint's focus is:</strong>
+* Presentation
+* Format stock display section
+* Login/logout functionality
+* News page: dynamic content
 
  ## Week 9,&nbsp; 4/07 - 4/13 &nbsp; Status: <span style="color: green">On Track</span>
 
