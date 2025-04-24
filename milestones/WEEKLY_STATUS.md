@@ -1,27 +1,42 @@
 # Weekly Status
 
  ## Week 11,&nbsp; 4/21 - 4/27 &nbsp; Status: <span style="color: green">On Track</span>
-
+ 
+<img width="1279" alt="Screenshot 2025-04-24 at 5 53 29 PM" src="https://github.com/user-attachments/assets/5d2335af-ffd1-437f-b6b0-12854f0a55f3" />
+&nbsp;
 
 <strong>This sprint's focus is:</strong>
-* Presentation
-* Final report 
+* Prepare for project presentation
+* Finsih implementing logging in to an account using the login button
+* Write final report 
 
  ## Week 10,&nbsp; 4/14 - 4/20 &nbsp; Status: <span style="color: green">On Track</span>
-
+ 
+<img width="1058" alt="Screenshot 2025-04-24 at 6 03 37 PM" src="https://github.com/user-attachments/assets/200b6b95-e997-42e9-8cbe-b9378ee591b0" />
+&nbsp;
  
 <strong>This sprint's focus is:</strong>
 * Presentation
 * Format stock display section
+* Finish showing news articles dynamically on stock news page
 * Login/logout functionality
-* News page
+* Fix weekend data issue- poll yfinance for info from 5 days
+* Reduce percetages to 2 decimal places
+* hard code a fake email address to work with yFinance
+* Style Watchlist
+* Add flash scripts to app.py file
+* Add link to News page on homepage
 
  ## Week 9,&nbsp; 4/07 - 4/13 &nbsp; Status: <span style="color: green">On Track</span>
 
+<img width="955" alt="Screenshot 2025-04-07 at 9 22 22 PM" src="https://github.com/user-attachments/assets/84bf6a77-92ba-440c-a373-9b6e7668d3c1" />
+&nbsp;
 
  <strong>This sprint's focus is:</strong>
   * Create a global CSS file
   * Login/logout functionality
+  * fix enter keypress on search bar
+  * write unit tests
 
  ## Week 8,&nbsp; 3/31 - 4/06 &nbsp; Status: <span style="color: green">On Track</span>
 
