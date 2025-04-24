@@ -3,25 +3,26 @@
  ## Week 11,&nbsp; 4/21 - 4/27 &nbsp; Status: <span style="color: green">On Track</span>
 
 
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
+* Presentation
 * Final report 
 
  ## Week 10,&nbsp; 4/14 - 4/20 &nbsp; Status: <span style="color: green">On Track</span>
 
  
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
 
  ## Week 9,&nbsp; 4/07 - 4/13 &nbsp; Status: <span style="color: green">On Track</span>
 
 
- <strong>This sprint's focused is:</strong>
+ <strong>This sprint's focus is:</strong>
 
  ## Week 8,&nbsp; 3/31 - 4/06 &nbsp; Status: <span style="color: green">On Track</span>
 
 <img width="1047" alt="Screenshot 2025-04-01 at 7 15 42 PM" src="https://github.com/user-attachments/assets/183d1873-644c-4f54-82c2-7c85cc61d23c" />
 &nbsp;
 
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
 
 * Add Header with navigation links to each page on site
 * Write HTML and CSS for Account Settings page
@@ -46,7 +47,7 @@
 <img width="700" alt="Screenshot 2025-03-17 at 7 39 35 PM" src="https://github.com/user-attachments/assets/af7bf0d0-afc6-49d2-a920-5b21896b148a" />
 &nbsp;
 
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
 
 * Create a CSS file for the website
 * Write HTML and CSS for Stock News page
@@ -63,7 +64,7 @@
 <img width="757" alt="Screenshot 2025-03-10 at 11 32 56 PM" src="https://github.com/user-attachments/assets/35e258cc-5b63-4601-bebf-a72a45fc21a2" />
 &nbsp;
 
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
 
 * Remove a stock from the home page
 * Add search box submit button to home page
@@ -81,7 +82,7 @@
 <img width="1165" alt="Screenshot 2025-03-03 at 9 08 32 PM" src="https://github.com/user-attachments/assets/7db23562-c9b6-4fb9-8628-379d80ef0f63" />
 &nbsp;
 
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
 
 * Finalize Designs for stock details on home page
 * Design Account Settings page
@@ -98,7 +99,7 @@
 <img width="1512" alt="Screenshot 2025-02-24 at 8 40 16 PM" src="https://github.com/user-attachments/assets/b87a9176-0988-4c6d-820a-77f4e72a45b2" />
 &nbsp;
 
-<strong>This sprint's focused is:</strong>
+<strong>This sprint's focus is:</strong>
 
 * Design the remaining pages of the site: Documentation, Account Settings, and Stock News
 * Adding and removing a stock from the homepage
