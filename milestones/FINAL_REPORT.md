@@ -95,5 +95,7 @@ On the Login page, if you click the Login button when the username or password f
 - The final result was a good-looking website, but multiple team members created their own CSS files with different styles. Later when we had to combine these files, some of pages looked inconsistent. We had to do extra work to make the styling cohesive across the entire site. In hindsight, we should have broken out creating a CSS file with a unified style into it's own task.<br>
 
 **Javascript:** <br>
+- JS files were written as frontend scripts to manipulate the GUI.  Javascript enabled dynamic features such as buttons (eg; news, add/remove stocks) that are available when needed and disappear when their fuctionality is not applicable.  The scripts were also written to post the data acquired by the API to the HTML pages.
+- The API offered by Supabase, supabase-js client library, is also written in Javascript.  The functionality used from this API is discussed in the Supabase section of this report.
 
 ### Project Challenges:
