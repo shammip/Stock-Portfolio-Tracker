@@ -14,12 +14,13 @@
 * Presentation
 * Format stock display section
 * Login/logout functionality
-* News page: dynamic content
+* News page
 
  ## Week 9,&nbsp; 4/07 - 4/13 &nbsp; Status: <span style="color: green">On Track</span>
 
 
  <strong>This sprint's focus is:</strong>
+  * Create a global CSS file
 
  ## Week 8,&nbsp; 3/31 - 4/06 &nbsp; Status: <span style="color: green">On Track</span>
 
