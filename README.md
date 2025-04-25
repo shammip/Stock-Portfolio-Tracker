@@ -8,11 +8,11 @@ Team Name: Ctrl Alt Elite
 
 Team members: list the name, git username, and email for each member.
 
-* James Giannoni (jagi4194@colorado.edu) - jgiannoni1 
-* James Hundertmark (jahu6304@colorado.edu) - jahu6304 
-* Brendan McDonald (mcdonabp@colorado.edu) - brendan-mcdonald-cspb 
-* Shammi Pereira (shpe4204@colorado.edu) - shammip 
-* Scott Wilson (scwi7689@colorado.edu) - ScottWilson1 
+* James Giannoni - jgiannoni1 
+* James Hundertmark - jahu6304 
+* Brendan McDonald - brendan-mcdonald-cspb 
+* Shammi Pereira - shammip 
+* Scott Wilson - ScottWilson1 
 
 Day/Time/TimeZone for the scheduled team weekly meeting (30 minutes via Zoom): Monday 5pm MT 
 
