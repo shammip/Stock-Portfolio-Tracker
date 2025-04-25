@@ -37,7 +37,7 @@ def get_stock_details_route():
     stockData = get_stock_details(searchText)
     
     ####################  and return to js function as JSON object  ####################
-    return jsonify(stockData)
+    return jsonify(list(stockData))
 
 @app.route('/get_watchlist_data', methods = ['POST'])
 def get_watchlist_data_route():
@@ -51,7 +51,7 @@ def get_watchlist_data_route():
     infoList = get_watchlist_data(tickerList)
     
     ####################  and return to js function as JSON object  ####################
-    return jsonify(infoList)
+    return jsonify(list(infoList))
 
 if __name__ == '__main__':
     app.run(debug=True)
